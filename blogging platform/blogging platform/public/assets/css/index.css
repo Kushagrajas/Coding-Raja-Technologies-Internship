@@ -1,0 +1,385 @@
+body {
+    background: whitesmoke;
+    font-family: Vollkorn, Serif;
+    margin: 0px;
+}
+
+a {
+    color: black;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+pre, code  {
+    font-size: 14px;
+    color: black;
+    background: #def5ff;
+    padding: 6px;
+    tab-size: 2;
+    line-height: 1.4em;
+    font-family: Consolas, Courier, Tahoma;
+}
+
+pre code {
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.w930 {
+    max-width: 930px;
+}
+
+.w600 {
+    max-width: 600px;
+}
+
+.pagebody {
+	width: 100%;
+	background: white;
+	min-height: 100%;
+	border-top: 2px solid silver;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	box-shadow: rgba(0,0,0,0.1) 0 0 5px;
+	margin-bottom: 20px;
+}
+
+.pagebody .pagebody-main {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        padding: 15px;
+	max-width: 600px;
+}
+
+.pagebody .pagebody-sidebar {
+        display: table-cell;
+        position: relative;
+        float: right;
+        height: 100%;
+		width: 300px;
+        overflow: hidden;
+}
+
+/* Navigation Bar */
+
+.navbar-wrap {
+    top: 0;
+    position: relative;
+    min-height: 50px;
+    border: none;
+    right: 0;
+    left: 0;
+    display: block;
+}
+
+.navbar-wrap .heading {
+    padding-left: 2px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+    line-height: 24px;
+    float: left;
+    font-size: 22px;
+}
+
+.navbar-wrap .heading .title {
+	font-family: Raleway;
+	color: black;
+    font-weight: Bold;
+}
+
+.navbar-wrap .heading .tagline {
+    padding-left: 15px;
+    font-weight: 300;
+    font-size: 80%;
+    text-decoration: italic;
+    color: black;
+}
+
+.pagebody-main .article:first-of-type {
+    margin-top: -20px;
+}
+
+.article {
+}
+
+.article .title h2 {
+	font-family: raleway;
+    display: block;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 300;
+    font-size: 2em;    
+}
+
+.article .subtitle {
+    margin-top: -16px;
+    font-size: 94%;
+}
+
+.article .footer {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.article .footer .more {
+    font-weight: normal;
+    border-bottom: 2px solid #888;
+    font-size: 90%;
+    font-family: raleway;
+    color: black;
+    border-radius: 1px;
+    background: #f5f5f5;
+    padding: 3px 10px 3px 10px;
+}
+
+.article .content{
+    font-size: 18px;
+    line-height: 1.48em;
+}
+
+.article .content.nostyle > * { 
+    font-weight: inherit;
+    font-size: inherit;
+    
+}
+
+.article .content p {
+    -webkit-margin-after: 1.48em;
+}
+
+.article .content img {
+    height: auto;
+    max-width: 100%;
+}
+
+.sidebar .splash {
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.sidebar .splash .logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 90px;
+}
+
+.sidebar .splash .title {
+	font-family: raleway;
+    margin-top:14px;
+    font-weight: 600;
+}
+
+.sidebar .splash .tagline {
+    margin-top:8px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    font-size: 94%;
+}
+
+.sidebar .splash .links {
+    margin-top:12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar .splash .links .icon {
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar .splash .links .icon:hover {
+    opacity: 0.7;
+}
+
+.sidebar .recent-posts {
+    padding: 15px;
+}
+
+.sidebar .recent-posts .title {
+	font-family: raleway;
+    margin-top: -12px;
+    border-top: 6px solid white;
+    padding-top: 14px;
+    font-weight: 600;
+    font-size: 90%;
+    margin-bottom: 14px;
+}
+
+.sidebar .recent-posts .title .showall {
+	float:right;
+	text-decoration: underline;
+    padding-right: 10px;
+    font-size: 0.80em;
+}
+
+.sidebar .recent-posts .post {
+    border-top: 2px solid white;
+    text-decoration: underline;
+	font-size: 94%;
+    font-weight: 400;
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.pagefooter {
+	display:block;
+	font-size: 80%;
+	width: 100%;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.nomaxwidth {
+    max-width: none !important;
+}
+
+.archive-item {
+	display: table;
+	margin-bottom: 10px;
+}
+
+.archive-item  .archive-date {
+	width: 120px;
+	text-decoration: underline;
+}
+
+.archive-item  .archive-date, .archive-item  .archive-title {
+	display: table-cell;
+}
+
+.pagefooter a {
+	font-weight: bold;
+}
+
+.socialbar {
+	margin-top: 15px;
+	
+}
+
+.socialbar .button {
+	text-decoration: none;
+	border-radius: 2px;
+	display: inline-block;
+	height:26px;
+	line-height: 26px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	background: #a2c3d3;
+	font-size: 13px;
+	padding-right: 12px;
+	margin-right: 6px;
+	overflow: hidden;
+}
+
+.socialbar .button:hover {
+	background: #333;
+}
+
+.socialbar .button:before {
+    content: "";
+	background: url(../images/shareicons.png) 0px 0px no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 5px 8px 5px 8px;
+	border-radius: 2px;
+}
+
+.socialbar .facebook {
+	background-color: rgb(71, 99, 158);
+}
+
+.socialbar .facebook:before {
+    background-position: 0px 0px;
+}
+
+.socialbar .twitter {
+	background-color: #4db2ec;
+}
+
+.socialbar .twitter:before {
+    background-position: -16px 0px;
+}
+
+.socialbar .google {
+	background-color: #dd4b39;
+}
+
+.socialbar .google:before {
+    background-position: -32px 0px;
+}
+
+@media (max-width: 963px) {
+    .splash {
+		margin: 0px !important;
+        position: relative;
+    }
+    
+    .pagebody {
+		border-top: none;
+        margin-top: 15px;
+        display: block;
+    }
+    .pagebody .pagebody-sidebar {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+        height: inherit;
+        display: block;
+    }
+    
+    .pagebody-main {
+        display: block;
+    }
+    
+    .pagebody .pagebody-sidebar .sidebar > div:not(:first-child) {
+            display:none;
+    }
+    
+    .navbar-wrap {
+        display:none;
+    }
+    .container {
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 380px) {
+ 
+ .socialbar .button {
+	width:26px;
+	padding-left:5px;
+ }
+
+ .pagebody {
+        margin-top: 0px;
+    }   
+}
+

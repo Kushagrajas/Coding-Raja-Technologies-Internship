@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+	<link href='<%- site.URL %>/assets/fonts/vollkorn/vollkorn.css' rel='stylesheet' type='text/css'>
+	<link href='<%- site.URL %>/assets/fonts/raleway/raleway.css' rel='stylesheet' type='text/css'>
+    <link href="<%- site.URL %>/assets/css/index.css" rel="stylesheet" type="text/css">
+    <title><%- title %></title>
+</head>
+
+<body>
+    <%- partial('index/navbar') %>
+
+    <div class="container w930">
+        <div class="pagebody">
+			
+			<% if ( sidebar === true ) { %>
+				<%- partial('index/sidebar') %>
+			<% } %>
+			
+            <div class="pagebody-main <%= sidebar === false ? "nomaxwidth" : "" %>">
+                <%- partial(page) %>
+            </div>
+			
+        </div>
+        <div class=pagefooter>
+	    Powered by <a href="http://veriacms.com">Veria Node JS CMS</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<div class="article">
+
+                <div class="title">
+                    <h2>
+                        <a href="<%- site.URL %>/<%- posts.uri %>">
+                            <%- posts.title %>
+                        </a>
+                    </h2>
+                </div>
+                <div class="subtitle">
+                    <%- posts.created_at %>
+                </div>
+				
+				<div class="socialbar">
+					<a href="https://twitter.com/home?status=<%- site.URL %>/<%- posts.uri %>" target="_blank" class="button twitter">
+					Twitter
+					</a>
+
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<%- site.URL %>/<%- posts.uri %>"  target="_blank" class="button facebook">
+					Facebook
+					</a>
+
+					<a href="https://plus.google.com/share?url=<%- site.URL %>/<%- posts.uri %>"  target="_blank" class="button google">
+					Google
+					</a>
+				</div>
+				
+                <div class="content">
+
+                    <%- posts.body %>
+
+                </div>
+
+                <div class="footer">
+				
+				<% if (disqus.enabled === true) { %>
+				
+				    <div id="disqus_thread" style="margin-bottom: -20px;"></div>
+					<script type="text/javascript">
+						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+						var disqus_shortname = '<%- disqus.shortname %>'; 
+
+						(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						})();
+					</script>
+				
+				<% } %>
+				
+				
+                </div>
+
+</div>
+
